@@ -1,23 +1,27 @@
-# Image and content credits — Gilded Fates
+# Pictures and sources for Project 5
 
-Fill in each entry once the actual image is uploaded. Only use photos you took, have permission to use, or can properly credit under an applicable license. The student promotional video must be recorded by the student and should not be presented as the store's official marketing video without permission.
+I'm keeping track of the pictures I used on the Gilded Fates site here. I have the files uploaded, but I still need to finish checking where each picture came from and whether I have permission to use it. I don't want to guess about the credits.
 
-| File | Photographer / Creator | Source URL or personal photograph | Permission / License |
-| --- | --- | --- | --- |
-| images/gilded-fates-logo.png | TO ADD | TO ADD | TO ADD |
-| images/gilded-fates-storefront.jpg | TO ADD | TO ADD | TO ADD |
-| images/trading-cards.jpg | TO ADD | TO ADD | TO ADD |
-| images/board-games.jpg | TO ADD | TO ADD | TO ADD |
-| images/miniatures.jpg | TO ADD | TO ADD | TO ADD |
-| images/game-night.jpg | TO ADD | TO ADD | TO ADD |
-| images/inside-the-shop.jpg | TO ADD | TO ADD | TO ADD |
-| images/find-the-store.jpg | TO ADD | TO ADD | TO ADD |
-| videos/gilded-fates-promo.mp4 | Student original | Student recording | Obtain consent for identifiable people and filming at the shop |
+| Picture | Where I got it / who took it | Permission or credit |
+| --- | --- | --- |
+| `images/gilded-fates-logo.jpg` | Need to fill in | Need to check |
+| `images/store-front.jpg` | Need to fill in | Need to check |
+| `images/trading-cards.jpg` | Need to fill in | Need to check |
+| `images/board-games.jpg` | Need to fill in | Need to check |
+| `images/pokemon-open-play.jpg` | Need to fill in | Need to check |
+| `images/community-play.jpg` | Need to fill in | Need to check |
+| `images/friday-night-fates.jpg` | Need to fill in | Need to check |
+| `images/gilded-fates-icon.jpg` (extra) | Need to fill in | Need to check |
+| `images/lorcana-wednesday.jpg` (extra) | Need to fill in | Need to check |
 
-## Information sources
+I'm also working on an on-camera video for the assignment. I'll add the source/filming details once that's done.
 
-- Emporia Area Chamber, 2025 ribbon cutting announcement: https://members.emporiakschamber.org/events/Details/ribbon-cutting-gilded-fates-1473589?sourceTypeId=Hub
-- Emporia KVOE, 2025 store opening coverage: https://kvoe.com/2025/06/11/wagon-wheel-gilded-fates-celebrate-soft-openings/
-- Public store listing (address, phone, listed hours): https://www.keepupcards.com/shop/gilded-fates-cards-games-emporia-ks
+## Where I found store information
 
-This website is an educational example, not operated or approved by Gilded Fates. Confirm location, contact details, and hours before submitting.
+I used public information to help with the store description, location, and background:
+
+- [Emporia Area Chamber ribbon cutting announcement](https://members.emporiakschamber.org/events/Details/ribbon-cutting-gilded-fates-1473589?sourceTypeId=Hub)
+- [KVOE article about the opening](https://kvoe.com/2025/06/11/wagon-wheel-gilded-fates-celebrate-soft-openings/)
+- [Store listing for contact information and hours](https://www.keepupcards.com/shop/gilded-fates-cards-games-emporia-ks)
+
+The website is only for class; it isn't the store's official site. I still need to double-check the listed hours and contact information before submitting.

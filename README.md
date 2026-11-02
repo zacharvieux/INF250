@@ -1,72 +1,30 @@
-# INF 250 — Web Development Projects
+# INF 250 projects
 
-This is a **standalone** GitHub Pages site for the Fall 2026 INF 250 Introduction to Web Development course. It is maintained separately from `fang-and-forge-site` and `veyra-world`; neither of those repositories needs to change.
+I put my last two web development projects in this repository. I was having problems paying for W3Spaces, so I decided to get them organized in GitHub while I work out the hosting issue. I also wanted a separate place for my class projects instead of mixing them in with my Fang & Forge website.
 
-## Pages
+The main page is just a way to get to the two projects.
 
-| Page | Folder or file |
-| --- | --- |
-| Course project directory | `/index.html` |
-| Project 4 — How to Play Scythe | `/project4-technical-docs/index.html` |
-| Project 5 — Gilded Fates Cards & Games | `/project5-product-landing/index.html` |
-| Project 5 — About | `/project5-product-landing/about.html` |
-| Project 5 — Visit | `/project5-product-landing/visit.html` |
+## The projects
 
-## Publish this site on GitHub Pages
+- **Project 4:** [How to Play Scythe](project4-technical-docs/) — my technical documentation page for the board game.
+- **Project 5:** [Gilded Fates Cards & Games](project5-product-landing/) — a landing page for a local game store. I also made [About](project5-product-landing/about.html) and [Visit](project5-product-landing/visit.html) pages for it.
 
-1. In this repository, open **Settings → Pages**.
-2. Under **Build and deployment**, set Source to **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**, then click **Save**.
-4. Once Pages is active, the project URLs should be:
-   - https://zacharvieux.github.io/INF250/
-   - https://zacharvieux.github.io/INF250/project4-technical-docs/
-   - https://zacharvieux.github.io/INF250/project5-product-landing/
-   - https://zacharvieux.github.io/INF250/project5-product-landing/about.html
-   - https://zacharvieux.github.io/INF250/project5-product-landing/visit.html
+## Moving everything over
 
-The site is static HTML/CSS/JavaScript and does not require a build step or hosting payment.
+I kept the projects in different folders so their CSS and pictures wouldn't get mixed up. I had to pay attention to the file paths and capitalization when uploading the photos, because a few of the names were different from what I originally used in the HTML.
 
-**Important:** The INF 250 syllabus requires W3Spaces and does not automatically accept links hosted elsewhere. Obtain the instructor's written permission before relying on a GitHub Pages submission for your grade.
+The pages use regular HTML, CSS, and a little JavaScript, so I don't need to build anything before putting them on GitHub Pages.
 
-## What to upload later
+My GitHub Pages address, once it's turned on, should be:
 
-### Project 4 — Scythe photographs
+https://zacharvieux.github.io/INF250/
 
-See [Project 4 image instructions](project4-technical-docs/images/README.md). Upload these files to `project4-technical-docs/images/`:
+## Things I still need to finish or check
 
-- `3d-scythe-combo-768x398.png`
-- `Scythe-Box-open.jpg`
-- `ScytheRules.jpg`
+- Record and upload my promotional video for Project 5.
+- Double-check the photo credits and permission to use the pictures.
+- Test both projects on my phone and computer.
+- Run the freeCodeCamp tests again to make sure nothing broke while moving the files.
+- Confirm that my professor will accept the GitHub Pages links, since the syllabus requires W3Spaces.
 
-### Project 5 — Gilded Fates photographs
-
-See [Project 5 image instructions](project5-product-landing/images/README.md). Upload these files to `project5-product-landing/images/`:
-
-- `gilded-fates-logo.png`
-- `gilded-fates-storefront.jpg`
-- `trading-cards.jpg`
-- `board-games.jpg`
-- `miniatures.jpg`
-- `game-night.jpg`
-- `inside-the-shop.jpg`
-- `find-the-store.jpg`
-
-The CSS and JavaScript show styled placeholders until the actual images load. Preserve **exact spelling and capitalization** in the filenames.
-
-### Project 5 — Student promotional video
-
-Upload `gilded-fates-promo.mp4` under `project5-product-landing/videos/`. This video must be recorded by the student for the assignment. See [video instructions](project5-product-landing/videos/README.md).
-
-After uploading images, complete [CREDITS.md](project5-product-landing/CREDITS.md) with sources, ownership, and necessary permissions. Update placeholder photo captions so that they correctly credit the uploaded materials. Do not claim official endorsement by the store.
-
-## Project requirements built into the code
-
-- Project 4 has `#main-doc`, eight sections with matching `#navbar .nav-link` links, code samples, lists, and responsive layout.
-- Project 5 has the freeCodeCamp-required `#header`, `#header-img`, fixed `#nav-bar`, three `.nav-link` anchors, `#video`, `#form`, `#email`, and `#submit`. Its three pages use a common CSS file and consistent navigation.
-- The email form is a **freeCodeCamp demonstration only**, not a real newsletter signup.
-
-Run the actual freeCodeCamp test suites and verify the images and video on mobile and desktop before submitting.
-
-## Taking it down
-
-This entire course site lives in the separate `zacharvieux/INF250` repository. It can be archived, made private (depending on Pages plan), or deleted after the class without changing the Fang & Forge website. If you later configure a custom subdomain, remove its DNS record when retiring the site.
+I want to keep this repository around until the projects are graded. After that, I can take it down without touching my other websites.

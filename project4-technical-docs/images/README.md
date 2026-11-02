@@ -1,11 +1,11 @@
-# Add Scythe images here
+# Scythe pictures
 
-Upload these exact filenames (case-sensitive):
+I uploaded the pictures for my Scythe page here. The HTML looks for these names:
 
-1. `3d-scythe-combo-768x398.png` — hero image
-2. `Scythe-Box-open.jpg` — game contents
-3. `ScytheRules.jpg` — action/rule reference
+- `3d-scythe-combo-768x398.png` — the picture at the top
+- `Scythe-Box-open.jpg` — the game pieces in the box
+- `ScytheRules.jpg` — the rules/reference picture
 
-The HTML and JavaScript already reference these files. They will display once uploaded; until then, the site uses visual placeholder panels.
+I also uploaded `Scythe-Box.webp`, but I'm not using that one on the page right now.
 
-Use only artwork or photos you may legally reproduce and replace the generic captions with actual attribution before class submission.
+If one doesn't show up, I need to check the spelling and capitalization of the file name and make sure it's in this folder. I also need to make sure the image sources are properly credited before I turn the project in.

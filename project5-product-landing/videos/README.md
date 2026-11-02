@@ -1,9 +1,7 @@
-# Student promo video
+# Project 5 video
 
-Upload an on-camera promotional video with the exact filename:
+I still need to upload the video for this project. I'm going to put it in this folder and name it:
 
 `gilded-fates-promo.mp4`
 
-Place it in this folder. The home page already contains the HTML5 video element with id="video" and will show the playable recording when it loads. Use MP4/H.264 for broad compatibility.
-
-Follow course requirements for student on-camera presence, length, and promotional content. Get appropriate permission if recording other people or inside the real store. Verify playback on your published website before submission.
+The Home page is already set up to play that file when I add it. I need to record the student promotional video required by the assignment, make sure I'm allowed to use any footage from inside the store, and test it on the published site before submitting.
