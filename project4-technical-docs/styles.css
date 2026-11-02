@@ -1,34 +1,368 @@
-/* Scythe technical documentation page, brought over for INF 250 */
-:root { --charcoal:#292d2f; --red:#8b3530; --paper:#e5e1d8; --steel:#626a70; --white:#fdfcf9; }
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body { margin:0; font-family:Arial, Helvetica, sans-serif; color:#26292c; background:var(--paper); line-height:1.65; }
-a { color:inherit; }
-#navbar { position:fixed; left:0; top:0; bottom:0; width:255px; background:var(--charcoal); color:#f2eee7; border-right:5px solid var(--red); overflow-y:auto; box-shadow:3px 0 12px #0002; }
-#navbar header { padding:23px 18px; font-size:1.35rem; font-weight:bold; background:#202427; border-bottom:3px solid var(--red); }
-#navbar .nav-link { display:block; padding:14px 18px; border-bottom:1px solid #495054; text-decoration:none; font-size:.95rem; }
-#navbar .nav-link:hover, #navbar .nav-link:focus-visible { background:var(--red); color:white; }
-#main-doc { margin-left:255px; padding:22px clamp(20px,5vw,72px) 70px; max-width:1320px; }
-.main-section { background:var(--white); border:1px solid #cbc7be; border-radius:5px; border-top:4px solid var(--red); padding:clamp(20px,4vw,37px); margin:22px 0; box-shadow:0 3px 7px #00000012; scroll-margin-top:20px; }
-.main-section header { font-size:1.65rem; font-weight:bold; color:var(--charcoal); border-bottom:2px solid #c0c3c2; padding-bottom:11px; margin-bottom:19px; }
-.main-section h2 { color:var(--red); font-size:1.15rem; margin-top:24px; }
-.main-section p { margin:14px 0; }
-.main-section li { padding:3px 0; }
-.main-section ul, .main-section ol { padding-left:26px; }
-.tip-box { border-left:5px solid var(--red); background:#f1eeea; padding:15px 18px; margin:19px 0; }
-.tip-box strong { color:var(--red); }
-code { display:block; width:fit-content; max-width:100%; white-space:normal; overflow-wrap:anywhere; padding:10px 14px; margin:14px 0; background:#e5e8e9; color:#353d41; border-left:3px solid var(--steel); border-radius:3px; font-size:.91rem; }
-.game-image { margin:22px 0; width:100%; }
-.game-image img { display:block; width:100%; max-height:420px; object-fit:contain; height:auto; background:#262a2e; }
-.game-image figcaption { font-size:.83rem; padding:8px 12px; background:#373d40; color:#f2eee7; }
-.skip-link { position:absolute; top:-50px; left:6px; padding:9px 12px; background:white; color:#111; z-index:20; }
-.skip-link:focus { top:6px; }
-@media (max-width:760px) {
-  #navbar { position:relative; width:100%; height:auto; max-height:290px; border-right:0; border-bottom:4px solid var(--red); }
-  #navbar header { padding:14px 18px; }
-  #navbar .nav-link { padding:9px 17px; }
-  #main-doc { margin:0; padding:12px 14px 30px; }
-  .main-section { padding:18px; margin:15px 0; }
-  .main-section header { font-size:1.4rem; }
-  .game-image img { max-height:290px; }
+/* ========================================
+   GENERAL PAGE
+   ======================================== */
+
+body {
+    margin: 0;
+
+    background-color: #e5e1d8;
+    color: #303234;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+#navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100%;
+
+    background-color: #292d2f;
+
+    border-right: 5px solid #8b3530;
+
+    box-sizing: border-box;
+}
+
+
+/* Navigation Heading */
+
+#navbar header {
+    padding: 25px 15px;
+
+    background-color: #202426;
+    color: #f0ede5;
+
+    font-family: Georgia, serif;
+
+    font-size: 1.5rem;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    border-bottom: 2px solid #8b3530;
+}
+
+
+/* Navigation Links */
+
+.nav-link {
+    display: block;
+
+    padding: 14px 20px;
+
+    color: #d3d0c8;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #4f5557;
+}
+
+
+/* Navigation Hover */
+
+.nav-link:hover {
+    background-color: #8b3530;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   MAIN DOCUMENTATION
+   ======================================== */
+
+#main-doc {
+    margin-left: 255px;
+
+    padding: 40px 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   DOCUMENT SECTIONS
+   ======================================== */
+
+.main-section {
+    max-width: 1050px;
+
+    margin: 0 auto 55px;
+}
+
+
+/* Main Section Heading */
+
+.main-section > header {
+    color: #292d2f;
+
+    font-family: Georgia, serif;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+    border-bottom: 4px solid #8b3530;
+
+    padding-bottom: 7px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Smaller Headings */
+
+.main-section h2 {
+    color: #78302c;
+
+    font-family: Georgia, serif;
+
+    font-size: 1.3rem;
+
+    margin-top: 30px;
+}
+
+
+/* Paragraphs */
+
+.main-section p {
+    margin: 15px 0;
+}
+
+
+/* ========================================
+   DOCUMENT IMAGES
+   ======================================== */
+
+.doc-image {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 30px auto;
+
+    text-align: center;
+}
+
+
+.doc-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+
+    border: 1px solid #767a79;
+    border-radius: 4px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.hero-image {
+    max-width: 850px;
+}
+
+
+.wide-image {
+    max-width: 950px;
+}
+
+
+.doc-image figcaption {
+    padding: 9px 12px;
+
+    background-color: #d5d0c6;
+    color: #55595a;
+
+    font-size: 0.9rem;
+    font-style: italic;
+
+    border-left: 3px solid #8b3530;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul,
+ol {
+    padding-left: 35px;
+}
+
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* ========================================
+   CODE / QUICK REFERENCE
+   ======================================== */
+
+code {
+    display: block;
+
+    margin: 20px 0;
+
+    padding: 12px;
+
+    background-color: #d1cec5;
+    color: #292d2f;
+
+    border-left: 5px solid #8b3530;
+
+    font-family: monospace;
+
+    font-size: 1rem;
+}
+
+
+/* ========================================
+   TIP BOX
+   ======================================== */
+
+.tip-box {
+    margin: 25px 0;
+
+    padding: 18px;
+
+    background-color: #f0ede5;
+
+    border: 1px solid #a39b8b;
+    border-left: 6px solid #8b3530;
+}
+
+
+.tip-box strong {
+    color: #78302c;
+}
+
+
+/* ========================================
+   TEXT SELECTION
+   ======================================== */
+
+::selection {
+    background-color: #8b3530;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    #main-doc {
+        padding: 35px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    #navbar {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        border-right: none;
+        border-bottom: 5px solid #8b3530;
+    }
+
+
+    #main-doc {
+        margin-left: 0;
+
+        padding: 25px;
+    }
+
+
+    .main-section {
+        width: 100%;
+    }
+
+
+    .main-section > header {
+        font-size: 1.7rem;
+    }
+
+
+    .doc-image {
+        width: 100%;
+
+        margin: 20px auto;
+    }
+
+
+    .doc-image figcaption {
+        font-size: 0.85rem;
+    }
+
+
+    ul,
+    ol {
+        padding-left: 25px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    #main-doc {
+        padding: 20px;
+    }
+
+
+    #navbar header {
+        font-size: 1.3rem;
+    }
+
+
+    .nav-link {
+        padding: 12px 18px;
+    }
+
+
+    .main-section > header {
+        font-size: 1.5rem;
+    }
+
+
+    .main-section h2 {
+        font-size: 1.2rem;
+    }
+
+
+    code {
+        font-size: 0.9rem;
+
+        overflow-wrap: break-word;
+    }
+
+
+    .tip-box {
+        padding: 15px;
+    }
+
 }
