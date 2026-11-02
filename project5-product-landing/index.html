@@ -3,102 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A student project about Gilded Fates Cards & Games in Emporia, Kansas.">
-  <title>Gilded Fates Cards & Games | Home</title>
+  <title>Gilded Fates Cards & Games</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="images/gilded-fates-icon.jpg">
 </head>
 <body>
-<header id="header">
-  <div class="header-inner">
-    <a class="brand" href="index.html"><img id="header-img" src="images/gilded-fates-logo.jpg" alt="Gilded Fates Cards and Games logo"><span>Gilded Fates <small>Cards &amp; Games</small></span></a>
-    <nav id="nav-bar" aria-label="Main navigation">
-      <a class="page-link selected" href="index.html">Home</a>
-      <a class="page-link " href="about.html">About</a>
-      <a class="page-link " href="visit.html">Visit</a>
-      <a class="nav-link" href="#features">Why Visit</a>
-      <a class="nav-link" href="#games">Games</a>
-      <a class="nav-link" href="#events">Events</a>
+  <header id="header">
+    <nav id="nav-bar" aria-label="Site Navigation">
+      <a href="index.html" class="logo-link">
+        <img id="header-img" src="images/gilded-fates-logo.jpg" alt="Gilded Fates Cards and Games logo">
+      </a>
+      <div class="page-links">
+        <a href="index.html" class="active-page">Home</a>
+        <a href="about.html">About</a>
+        <a href="visit.html">Visit</a>
+      </div>
+      <div class="section-links">
+        <a class="nav-link" href="#games">Games</a>
+        <a class="nav-link" href="#promo">Video</a>
+        <a class="nav-link" href="#updates">Updates</a>
+      </div>
     </nav>
-  </div>
-</header>
-<main>
-  <section class="hero">
-    <div class="content hero-layout">
-      <div class="hero-text">
-        <p class="eyebrow">Emporia, Kansas · Local game store</p>
-        <h1>Find Your Next <span>Adventure</span></h1>
-        <p>Whether you collect trading cards, like board games, or just want somewhere to play with friends, Gilded Fates Cards &amp; Games is a place to check out in Emporia.</p>
-        <a class="button" href="visit.html">Plan a Visit</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="section-label">CARDS • GAMES • COMMUNITY</p>
+        <h1>Find Your Next Adventure</h1>
+        <p class="hero-text">Gilded Fates Cards & Games gives the Emporia gaming community a local place to discover trading cards, tabletop games, miniatures, and people who enjoy the same hobbies.</p>
+        <div class="hero-buttons">
+          <a href="#games" class="button">Explore the Store</a>
+          <a href="visit.html" class="button outline-button">Plan a Visit</a>
+        </div>
       </div>
-      <img class="hero-image" src="images/store-front.jpg" alt="Outside of Gilded Fates Cards and Games">
-    </div>
-  </section>
-  <section class="section content" id="features">
-    <h2>More Than Just a Game Store</h2>
-    <p>Gilded Fates is a local store for people who enjoy trading card games, tabletop games, and meeting other players. I wanted this website to show what they have and why having a gaming place in town is important.</p>
-    <div class="reason-grid">
-      <article><h3>Games to Explore</h3><p>Take a look at different cards and games, whether you're collecting or trying something new.</p></article>
-      <article><h3>People to Play With</h3><p>Game nights and open play are a chance to meet other people who enjoy the same hobby.</p></article>
-      <article><h3>Something Local</h3><p>Having a gaming store nearby gives the community a place to play rather than having to travel out of town.</p></article>
-    </div>
-  </section>
-  <section class="section light" id="games">
-    <div class="content">
+    </section>
+
+    <section class="intro-section">
+      <p class="section-label">WELCOME TO GILDED FATES</p>
+      <h2>More Than Just a Game Store</h2>
+      <p class="large-text">Buying games online can be convenient, but a local game store offers something the internet cannot: a place to meet other players and actually enjoy the hobby together.</p>
+      <p>Gilded Fates brings trading cards, board games, roleplaying games, miniatures, and in-store play together in one local business.</p>
+    </section>
+
+    <section id="games" class="games-section">
+      <p class="section-label">EXPLORE THE STORE</p>
       <h2>Something for Every Kind of Gamer</h2>
-      <p>From collecting cards to getting a group together for a board game, there is a lot to explore.</p>
-      <div class="photo-grid">
-        <figure><img src="images/trading-cards.jpg" alt="Trading card games and products" loading="lazy"><figcaption>Trading Card Games</figcaption></figure>
-        <figure><img src="images/board-games.jpg" alt="Board games displayed for sale" loading="lazy"><figcaption>Board Games</figcaption></figure>
-        <figure><img src="images/pokemon-open-play.jpg" alt="Players participating in Pokémon open play" loading="lazy"><figcaption>Pokémon Open Play</figcaption></figure>
+      <p class="section-intro">Whether you collect cards, roll dice, enjoy board games, or want a place to meet other local players, Gilded Fates has something worth checking out.</p>
+      <div class="card-container">
+        <article class="info-card">
+          <img src="images/trading-cards.jpg" alt="Trading card products at Gilded Fates" class="card-photo">
+          <div class="card-content">
+            <h3>Trading Cards</h3>
+            <p>Browse collectible card games and products such as Pokémon, Magic: The Gathering, Lorcana, and more.</p>
+          </div>
+          <p class="image-credit">Image credit: <a href="https://www.facebook.com/share/p/1BuQ2ZJvTV/" target="_blank" rel="noopener">Gilded Fates / Facebook</a></p>
+        </article>
+
+        <article class="info-card">
+          <img src="images/board-games.jpg" alt="Board games available at Gilded Fates" class="card-photo">
+          <div class="card-content">
+            <h3>Board Games & Tabletop</h3>
+            <p>Explore board games, tabletop titles, and hobby products for players looking for something new for game night.</p>
+          </div>
+          <p class="image-credit">Image credit: <a href="https://www.facebook.com/share/p/18AKwuLE76/" target="_blank" rel="noopener">Gilded Fates / Facebook</a></p>
+        </article>
+
+        <article class="info-card">
+          <img src="images/community-play.jpg" alt="Players participating in community play at Gilded Fates" class="card-photo">
+          <div class="card-content">
+            <h3>Community Play</h3>
+            <p>Meet other players, participate in events, trade cards, and enjoy gaming with a local community instead of only playing online.</p>
+          </div>
+          <p class="image-credit">Image credit: <a href="https://www.facebook.com/share/1TBDm9NxCw/" target="_blank" rel="noopener">Gilded Fates / Facebook</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="events-preview">
+      <p class="section-label">WEEKLY EVENTS</p>
+      <h2>Come Play</h2>
+      <p class="section-intro">Gilded Fates hosts recurring events where players can get out of the house, meet other gamers, and spend time enjoying the games they love.</p>
+      <div class="event-container">
+        <article class="event-card">
+          <img src="images/lorcana-wednesday.jpg" alt="Wednesday Lorcana event at Gilded Fates">
+          <div class="event-text">
+            <p class="event-day">WEDNESDAY</p>
+            <h3>Wednesday Lorcana</h3>
+            <p>Disney Lorcana players can meet for weekly play from 5:00 PM to 7:30 PM.</p>
+          </div>
+          <p class="image-credit">Image credit: <a href="https://www.facebook.com/share/p/1Gqga1eVeE/" target="_blank" rel="noopener">Gilded Fates / Facebook</a></p>
+        </article>
+
+        <article class="event-card">
+          <img src="images/friday-night-fates.jpg" alt="Friday Night Fates event at Gilded Fates">
+          <div class="event-text">
+            <p class="event-day">FRIDAY</p>
+            <h3>Friday Night Fates</h3>
+            <p>Play, trade, and spend Friday night with other members of the local gaming community.</p>
+          </div>
+          <p class="image-credit">Image credit: <a href="https://www.facebook.com/share/p/1FVwboACg2/" target="_blank" rel="noopener">Gilded Fates / Facebook</a></p>
+        </article>
+
+        <article class="event-card">
+          <img src="images/pokemon-open-play.jpg" alt="Pokemon Open Play Day at Gilded Fates">
+          <div class="event-text">
+            <p class="event-day">SATURDAY</p>
+            <h3>Pokémon Open Play</h3>
+            <p>Pokémon players can join open play every Saturday from 12:00 PM until 5:00 PM.</p>
+          </div>
+          <p class="image-credit">Image credit: <a href="https://www.facebook.com/share/19BXXMRxZK/" target="_blank" rel="noopener">Gilded Fates / Facebook</a></p>
+        </article>
+      </div>
+      <a href="visit.html" class="button">More Visit Information</a>
+    </section>
+
+    <section id="promo" class="promo-section">
+      <p class="section-label">MY LOCAL BUSINESS PICK</p>
+      <h2>Why You Should Check It Out</h2>
+      <p class="section-intro">My short promotional video explains what Gilded Fates offers, why I chose the business, and why local gamers should consider visiting.</p>
+      <div class="video-container">
+        <iframe id="video" src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Gilded Fates Cards and Games promotional video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="updates" class="updates-section">
+      <div class="updates-content">
+        <p class="section-label">STAY CONNECTED</p>
+        <h2>Don't Miss Your Next Game</h2>
+        <p>Enter your email address to sign up for updates.</p>
+        <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+          <label for="email">Email Address</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+            <input id="submit" type="submit" value="Sign Up">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/gilded-fates-icon.jpg" alt="Gilded Fates red gem icon" class="footer-icon">
+        <div>
+          <h2>Gilded Fates</h2>
+          <p>Cards & Games</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="visit.html">Visit</a>
       </div>
     </div>
-  </section>
-  <section class="section content" id="events">
-    <h2>Come Play</h2>
-    <p>One of the things I like about a local game store is having somewhere to actually play. Events and casual game nights can be a good way to meet people and learn a new game.</p>
-    <div class="photo-grid two">
-      <figure><img src="images/friday-night-fates.jpg" alt="Friday night event at Gilded Fates" loading="lazy"><figcaption>Friday Night Fates</figcaption></figure>
-      <figure><img src="images/lorcana-wednesday.jpg" alt="Lorcana event at the store" loading="lazy"><figcaption>Lorcana Wednesday</figcaption></figure>
+    <div class="image-credits">
+      <p>Logo and icon credit: <a href="https://www.facebook.com/gildedfatesllc/about" target="_blank" rel="noopener">Gilded Fates LLC / Facebook</a></p>
     </div>
-    <p>Event schedules can change. Check with the store before planning around a specific event.</p>
-  </section>
-  <section class="section light">
-    <div class="content side-by-side">
-      <div>
-        <h2>Why You Should Check It Out</h2>
-        <p>It's easy to buy games online, but there's something different about being able to ask questions, see what people are playing, and sit at a table together. That's why I chose Gilded Fates for this project.</p>
-        <p>If you've never tried a trading card game or a tabletop game before, a local store can be a good place to start.</p>
-      </div>
-      <img class="side-image" src="images/community-play.jpg" alt="Players gathered to play games together" loading="lazy">
-    </div>
-  </section>
-  <section class="section content video-section">
-    <h2>Take a Look Inside</h2>
-    <p>I'm adding my promotional video for this class project here. It will show up once the video is recorded and uploaded.</p>
-    <video id="video" src="videos/gilded-fates-promo.mp4" poster="images/store-front.jpg" controls preload="none">Your browser does not support video.</video>
-    <p class="small-note">Video for INF 250 is still being worked on.</p>
-  </section>
-  <section class="section dark-section">
-    <div class="content">
-      <h2>Don't Miss Your Next Game</h2>
-      <p>Interested in seeing the store for yourself? Visit the location page to find the address and other details.</p>
-      <a class="button" href="visit.html">Find the Store</a>
-    </div>
-  </section>
-  <section class="section content" id="contact">
-    <h2>Email Form Practice</h2>
-    <p>This is the form required for the freeCodeCamp landing page project. It is a test form, not a real store mailing list.</p>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      <input type="submit" id="submit" value="Submit">
-    </form>
-    <p class="small-note">I still need to fill out the photo credits in <a href="CREDITS.md">CREDITS.md</a>.</p>
-  </section>
-</main>
-<footer>
-  <p>INF 250 Product Landing Page Project — Gilded Fates Cards &amp; Games</p>
-  <p>Student-made website for class. This is not the store's official website. <a href="../">Back to INF 250 projects</a></p>
-</footer>
+    <p class="student-note">Website created for INF 250 Web Development.</p>
+  </footer>
 </body>
 </html>

@@ -3,50 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A student project about Gilded Fates Cards & Games in Emporia, Kansas.">
   <title>About | Gilded Fates Cards & Games</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="images/gilded-fates-icon.jpg">
 </head>
 <body>
-<header id="header">
-  <div class="header-inner">
-    <a class="brand" href="index.html"><img id="header-img" src="images/gilded-fates-logo.jpg" alt="Gilded Fates Cards and Games logo"><span>Gilded Fates <small>Cards &amp; Games</small></span></a>
-    <nav id="nav-bar" aria-label="Main navigation">
-      <a class="page-link " href="index.html">Home</a>
-      <a class="page-link selected" href="about.html">About</a>
-      <a class="page-link " href="visit.html">Visit</a>
-      <a class="nav-link" href="index.html#features">Why Visit</a>
-      <a class="nav-link" href="index.html#games">Games</a>
-      <a class="nav-link" href="index.html#events">Events</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <section class="page-heading"><div class="content"><h1>More Than Just a Game Store</h1><p>About Gilded Fates and why I picked it for my web development project.</p></div></section>
-  <section class="section content side-by-side">
-    <div><h2>About Gilded Fates</h2>
-      <p>Gilded Fates Cards &amp; Games is a local gaming store in Emporia, Kansas. It focuses on cards, tabletop games, and giving players a place to get together.</p>
-      <p>The store opened in 2025. I liked that it wasn't only about selling games; the community part of it was what made it stand out to me.</p>
-    </div>
-    <img class="side-image" src="images/friday-night-fates.jpg" alt="A game night at Gilded Fates" loading="lazy">
-  </section>
-  <section class="section light">
-    <div class="content side-by-side reverse">
-      <img class="side-image" src="images/community-play.jpg" alt="A group playing games together" loading="lazy">
-      <div><h2>Why I Chose This Business</h2>
-        <p>I have enjoyed tabletop games for a long time, so I wanted to work on a project that was connected to something I'm actually interested in.</p>
-        <p>It was also a chance to try building a site for a real local business. I worked on keeping the navigation simple and making sure the layout could fit on smaller screens.</p>
+  <header>
+    <nav class="subpage-nav" aria-label="Site Navigation">
+      <a href="index.html" class="logo-link"><img class="site-logo" src="images/gilded-fates-logo.jpg" alt="Gilded Fates Cards and Games logo"></a>
+      <div class="page-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active-page">About</a>
+        <a href="visit.html">Visit</a>
       </div>
+      <div class="section-links">
+        <a href="index.html#games">Games</a>
+        <a href="index.html#promo">Video</a>
+        <a href="index.html#updates">Updates</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="section-label">ABOUT MY LOCAL BUSINESS PICK</p>
+      <h1>Why I Chose Gilded Fates</h1>
+      <p>A local business connected to a hobby I already enjoy.</p>
+    </section>
+
+    <section class="about-section">
+      <div class="about-block">
+        <p class="section-label">THE BUSINESS</p>
+        <h2>About Gilded Fates</h2>
+        <p>Gilded Fates Cards & Games is a locally owned game and hobby store in Emporia, Kansas. The store carries trading cards, board games, tabletop games, miniatures, and other hobby products while also providing space for people to play.</p>
+        <p>What makes a local game store different from simply ordering something online is the community around it. Players can find something new, talk with people who understand the hobby, and have a place where they can actually play.</p>
+      </div>
+    </section>
+
+    <section class="personal-section">
+      <div class="personal-container">
+        <article class="personal-card">
+          <p class="section-label">WHY I CHOSE IT</p>
+          <h2>Gaming Is Already Part of My Life</h2>
+          <p>I chose Gilded Fates because tabletop gaming is already a hobby that I enjoy. I play games such as Dungeons & Dragons and enjoy both the creativity and social side of tabletop gaming. Because of that, Gilded Fates stood out to me when I needed to choose a local business for this project.</p>
+          <p>Building a website around something I already understand also gives me a chance to create something that feels more personal instead of choosing a business simply because it meets the assignment requirements.</p>
+        </article>
+
+        <article class="personal-card">
+          <p class="section-label">WHAT I LOVE ABOUT IT</p>
+          <h2>It Creates a Place to Play</h2>
+          <p>What I like most about Gilded Fates is that it offers more than products sitting on shelves. Having a local gaming store gives people a place to meet others who share the same interests.</p>
+          <p>I also like that the store supports several different parts of the hobby. Someone may be interested in trading cards, roleplaying games, board games, or miniature gaming and still find something that interests them.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="who-section">
+      <p class="section-label">WHO SHOULD VISIT?</p>
+      <h2>You Don't Have to Be a Hardcore Gamer</h2>
+      <p>I think Gilded Fates is worth visiting for experienced gamers, collectors, and people who are simply curious about the hobby. Trading card players can look for cards and other players, tabletop gamers can find products for their games, and someone completely new can see what different games are available.</p>
+      <p>It can also be a good place for someone looking for a social hobby. Games are designed to bring people together, and having a local place to play makes it easier to find other people who enjoy them.</p>
+      <a href="visit.html" class="button">Plan Your Visit</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="images/gilded-fates-icon.jpg" alt="Gilded Fates red gem icon" class="footer-icon">
+        <div><h2>Gilded Fates</h2><p>Cards & Games</p></div>
+      </div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="visit.html">Visit</a></div>
     </div>
-  </section>
-  <section class="section content"><h2>Everyone Starts Somewhere</h2>
-    <p>Whether you've been playing card games for years or have never opened a tabletop rulebook, there is something fun about finding a game you enjoy.</p>
-    <a class="button" href="visit.html">Visit the Store</a>
-  </section>
-</main>
-<footer>
-  <p>INF 250 Product Landing Page Project — Gilded Fates Cards &amp; Games</p>
-  <p>Student-made website for class. This is not the store's official website. <a href="../">Back to INF 250 projects</a></p>
-</footer>
+    <div class="image-credits"><p>Logo and icon credit: <a href="https://www.facebook.com/gildedfatesllc/about" target="_blank" rel="noopener">Gilded Fates LLC / Facebook</a></p></div>
+    <p class="student-note">Website created for INF 250 Web Development.</p>
+  </footer>
 </body>
 </html>
