@@ -1,91 +1,500 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A student-created, beginner-friendly technical guide to playing the board game Scythe.">
-  <title>How to Play Scythe | INF 250 Project 4</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="media.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How to Play Scythe</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#main-doc">Skip to guide</a>
-  <nav id="navbar" aria-label="Scythe documentation sections">
-    <header><small>FIELD MANUAL / 04</small><span>SCYTHE</span><strong>Rulebook Companion</strong></header>
-    <a class="back-link" href="../">← Back to INF 250 projects</a>
-    <p class="nav-heading">Contents</p>
-    <a class="nav-link" href="#Why_This_Game">Why This Game</a>
-    <a class="nav-link" href="#Overview">Overview</a>
-    <a class="nav-link" href="#What_You_Need">What You Need</a>
-    <a class="nav-link" href="#Setup">Setup</a>
-    <a class="nav-link" href="#How_to_Play">How to Play</a>
-    <a class="nav-link" href="#Scoring_and_Winning">Scoring and Winning</a>
-    <a class="nav-link" href="#Common_Mistakes_and_Tips">Common Mistakes and Tips</a>
-    <a class="nav-link" href="#FAQ_and_Edge_Cases">FAQ and Edge Cases</a>
-    <p class="nav-note">A student learning resource, not a replacement for the official game rules.</p>
-  </nav>
-  <main id="main-doc">
-    <div class="page-top"><p>INTRODUCTION TO WEB DEVELOPMENT / TECHNICAL DOCUMENTATION</p><span>PROJECT 04</span></div>
-    <div class="hero"><span class="overline">A STRATEGY GAME FIELD GUIDE</span><h1>How to Play <em>Scythe</em></h1><p>Build an engine. Expand your influence. Choose when to fight and when to hold back. This guide turns a complex-looking tabletop game into clear, manageable steps.</p><div class="hero-meta"><span>Strategy</span><span>Resource management</span><span>Area control</span></div></div>
-    <figure class="image-shell wide"><img src="images/3d-scythe-combo-768x398.png" alt="Scythe board game components arranged on a table" loading="lazy"><div class="image-fallback" aria-hidden="true"><b>HERO IMAGE</b><span>Upload images/3d-scythe-combo-768x398.png</span></div><figcaption>Scythe game components used for this guide.</figcaption></figure>
+    <a class="skip-link" href="#main-doc">Skip to the guide</a>
 
-    <section class="main-section" id="Why_This_Game"><header>Why This Game</header><div class="rule"></div>
-      <p>I chose Scythe because it is one of the board games I enjoy enough to explain to someone who has never played it. I like strategy games that offer more than one way to work toward victory. In Scythe, you can focus on building your economy, spreading across the map, upgrading your abilities, or deciding when combat is worth the risk. The resource-management side of the game makes every decision feel connected to your next turn. Combat matters, but winning does not simply mean defeating everyone else. I also enjoy the alternate-history artwork and the way each faction plays a little differently. It is the kind of game that rewards learning from your mistakes, which makes it a good subject for a step-by-step guide.</p>
-      <aside class="callout"><strong>Why I recommend it</strong><p>For someone who likes planning ahead and adjusting to changing situations, Scythe provides interesting choices from the first turn to the final score.</p></aside>
-    </section>
+    <!-- Navigation -->
 
-    <section class="main-section" id="Overview"><header>Overview</header><div class="rule"></div>
-      <p>Scythe is an engine-building strategy board game set in an alternate 1920s version of Eastern Europe. Each player controls a faction, manages workers and resources, and competes to gain territory, achievements, and coins.</p>
-      <p>You take one top-row action on your player mat each turn and may then take the corresponding bottom-row action if you can afford it. Different player mats make familiar actions work differently, so there is no single perfect strategy for every game.</p>
-      <div class="stat-grid"><div><span class="stat">01</span><b>Choose an action</b><p>Use a different top-row section than the one you used last turn.</p></div><div><span class="stat">02</span><b>Build your engine</b><p>Gather resources, produce, trade, recruit, upgrade, or deploy mechs.</p></div><div><span class="stat">03</span><b>Earn stars and coins</b><p>Progress toward the endgame while managing popularity and territory.</p></div></div>
-    </section>
+    <nav id="navbar">
 
-    <section class="main-section" id="What_You_Need"><header>What You Need</header><div class="rule"></div>
-      <p>Before starting, organize the components. The base game includes a central game board, faction and player mats, wooden pieces, plastic miniatures, cards, coins, and resource tokens. Keep the official rulebook close by for exact setup values and faction-specific exceptions.</p>
-      <ul><li>One game board and the components for the number of players.</li><li>One faction mat and one player mat per player.</li><li>Each player's character, workers, mechs, markers, and structures.</li><li>Resources, coins, combat cards, and encounter/objective cards.</li><li>Popularity, power, and achievement (star) tracks.</li></ul>
-      <figure class="image-shell"><img src="images/Scythe-Box-open.jpg" alt="An opened copy of the Scythe board game and its components" loading="lazy"><div class="image-fallback" aria-hidden="true"><b>COMPONENT PHOTO</b><span>Upload images/Scythe-Box-open.jpg</span></div><figcaption>The game box and some of its components.</figcaption></figure>
-      <p class="inline-key">Quick reference: <code>Board → Faction Mat → Player Mat → Pieces → Start</code></p>
-    </section>
+        <header>Scythe Rulebook</header>
 
-    <section class="main-section" id="Setup"><header>Setup</header><div class="rule"></div>
-      <p>Use the official setup instructions to determine which faction and player mat each person receives, which cards to draw, and where everyone begins. This overview gives new players a reliable order for getting ready.</p>
-      <ol><li>Place the game board in the middle of the table. Sort coins, resources, encounter tokens, and other shared pieces within reach.</li><li>Give each player a faction mat and a player mat, following the base-game rules for allowed combinations and player count.</li><li>Put each player's character and workers in the indicated starting positions and place unused pieces on the matching spaces of their mats.</li><li>Set starting power, popularity, coins, and cards using the values shown for that player.</li><li>Prepare the decks and shared tracks, determine turn order, and explain how action selection works.</li></ol>
-      <p class="inline-key">Setup checklist: <code>shared board</code> + <code>player mats</code> + <code>starting pieces</code> + <code>cards and tracks</code>.</p>
-      <aside class="callout"><strong>First-game tip</strong><p>Don't try to memorize every faction ability before the first turn. Start with the basic actions; check special abilities when they become relevant.</p></aside>
-    </section>
+        <a class="nav-link" href="#Why_This_Game">
+            Why This Game
+        </a>
 
-    <section class="main-section" id="How_to_Play"><header>How to Play</header><div class="rule"></div>
-      <p>Scythe turns are built around four columns on your player mat. Move your action token to a new column, resolve its top-row action, and optionally resolve the bottom-row action in that same column if you can pay the cost.</p>
-      <div class="steps"><article><span>1</span><div><h3>Pick a new action column</h3><p>You generally cannot select the column used on your immediately previous turn. Look ahead to the actions you may want next.</p></div></article><article><span>2</span><div><h3>Use the top-row action</h3><p>Common options include moving units, producing resources, trading, or bolstering your faction.</p></div></article><article><span>3</span><div><h3>Consider the bottom-row action</h3><p>Spend the listed resources to upgrade, deploy, build, or enlist, based on your player mat. If you cannot pay, skip it.</p></div></article><article><span>4</span><div><h3>Check objectives and positions</h3><p>Track stars, popularity, power, resources, and which territories you control before the next turn.</p></div></article></div>
-      <p class="inline-key">Turn pattern: <code>New column → top action → optional bottom action → next player</code></p>
-      <figure class="image-shell"><img src="images/ScytheRules.jpg" alt="Reference material showing Scythe rules or player mats" loading="lazy"><div class="image-fallback" aria-hidden="true"><b>RULES REFERENCE</b><span>Upload images/ScytheRules.jpg</span></div><figcaption>A reference for learning how the game works.</figcaption></figure>
-      <p>Combat uses secretly committed power and combat cards. Both sides reveal their chosen strength at the same time; the higher total wins, and ties favor the attacker. Because power is limited and a battle may affect popularity, a fight should support your larger plan.</p>
-    </section>
+        <a class="nav-link" href="#Overview">
+            Overview
+        </a>
 
-    <section class="main-section" id="Scoring_and_Winning"><header>Scoring and Winning</header><div class="rule"></div>
-      <p>The game ends as soon as a player places their sixth star. That player starts the endgame, but does not automatically win. After the end is triggered, players calculate their final wealth in coins.</p>
-      <p>Final scoring includes coins already held plus rewards for placed stars, controlled territories, and certain resources. Popularity determines which scoring tier is used, making it useful even if it does not immediately generate coins. The player with the highest final coin total wins.</p>
-      <div class="score-strip"><span>6 stars <b>trigger</b> the end</span><span>Popularity <b>changes</b> scoring</span><span>Most coins <b>wins</b></span></div>
-      <p class="inline-key">Remember: <code>sixth star ≠ automatic victory</code>. Check the printed scoring chart and any applicable structure bonus.</p>
-    </section>
+        <a class="nav-link" href="#What_You_Need">
+            What You Need
+        </a>
 
-    <section class="main-section" id="Common_Mistakes_and_Tips"><header>Common Mistakes and Tips</header><div class="rule"></div>
-      <p>New players often spend more time thinking about combat than about how their economy works. These habits help keep early turns focused:</p>
-      <ul class="tip-list"><li><strong>Repeating a column:</strong> You generally must choose a different section from the previous turn. Plan a two-turn sequence, not just one move.</li><li><strong>Forgetting the second action:</strong> A bottom-row action can turn a routine turn into real progress. Check the cost before moving on.</li><li><strong>Ignoring popularity:</strong> A good star total may score less than expected if your popularity stays low.</li><li><strong>Overcommitting to combat:</strong> Fighting for every territory can drain power that would help you score elsewhere.</li><li><strong>Spreading workers too early:</strong> Produce what you can use and keep the resource costs on your mat in mind.</li></ul>
-      <aside class="callout"><strong>A useful habit</strong><p>At the start of each turn, ask: "Which action helps my next two turns—not just this one?"</p></aside>
-    </section>
+        <a class="nav-link" href="#Setup">
+            Setup
+        </a>
 
-    <section class="main-section" id="FAQ_and_Edge_Cases"><header>FAQ and Edge Cases</header><div class="rule"></div>
-      <p>These questions cover situations that often interrupt a first game. When a faction power or expansion changes the normal rule, consult that rulebook for the specific exception.</p>
-      <details><summary>Can I use the same action column on consecutive turns?</summary><p>Normally no. Move your action token to a different column on your next turn. Check specific special abilities for any exceptions.</p></details>
-      <details><summary>Do I have to take both actions in my chosen column?</summary><p>No. You can take the top-row action and skip the bottom-row action if you lack resources or prefer not to pay its cost.</p></details>
-      <details><summary>Does placing the sixth star mean I win?</summary><p>No. It ends the game immediately, and then everyone scores. A different player can have the most coins after scoring.</p></details>
-      <details><summary>What happens when combat totals are tied?</summary><p>When both sides reveal equal total combat strength, the attacker wins the battle under the base rules.</p></details>
-      <details><summary>Can I use this guide instead of the rulebook?</summary><p>Use this as a first-play companion, then consult the official rulebook for precise movement, encounters, combat details, faction abilities, and scoring exceptions.</p></details>
-      <p class="source-note">Game credit: <cite>Scythe</cite> is designed by Jamey Stegmaier and published by Stonemaier Games. This unofficial page was prepared for an INF 250 class assignment.</p>
-      <a class="bottom-link" href="../">← Return to course projects</a>
-    </section>
-    <footer>INF 250 · Technical Documentation Project 4 · Student-created educational guide</footer>
-  </main>
+        <a class="nav-link" href="#How_to_Play">
+            How to Play
+        </a>
+
+        <a class="nav-link" href="#Scoring_and_Winning">
+            Scoring and Winning
+        </a>
+
+        <a class="nav-link" href="#Common_Mistakes_and_Tips">
+            Common Mistakes and Tips
+        </a>
+
+        <a class="nav-link" href="#FAQ_and_Edge_Cases">
+            FAQ and Edge Cases
+        </a>
+
+    </nav>
+
+
+    <!-- Main Documentation -->
+
+    <main id="main-doc">
+
+
+        <!-- =====================================
+             WHY THIS GAME
+             ===================================== -->
+
+        <section class="main-section" id="Why_This_Game">
+
+            <header>Why This Game</header>
+
+            <p>
+                I chose Scythe because it is one of the board games that I
+                enjoy enough that I would feel comfortable explaining it to
+                someone else. I like strategy games where there is more than
+                one way to work toward winning, and Scythe gives players a lot
+                of choices about how they build their faction.
+            </p>
+
+            <p>
+                I originally became interested in Scythe because of its mix of
+                strategy, resource management, exploration, and combat. I also
+                like that combat is part of the game without being the only
+                thing that matters. The game rewards planning ahead and trying
+                to make each turn build toward something larger.
+            </p>
+
+            <p>
+                I would recommend Scythe to people who enjoy strategy games and
+                do not mind taking some time to learn how the different systems
+                work together. It can look complicated at first, but after a
+                few turns the player mat makes the basic turn structure much
+                easier to understand.
+            </p>
+
+            <div class="tip-box">
+                <strong>Why I Like It:</strong>
+                Scythe gives me several different problems to think about at
+                the same time instead of making every game depend only on
+                combat.
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             OVERVIEW
+             ===================================== -->
+
+        <section class="main-section" id="Overview">
+
+            <header>Overview</header>
+            <figure class="game-image">
+                <img src="images/3d-scythe-combo-768x398.png" alt="Scythe board game artwork and components">
+                <figcaption>Scythe board game overview</figcaption>
+            </figure>
+
+
+            <p>
+                Scythe is a strategy board game set in an alternate version of
+                1920s Eastern Europe. Each player controls a different faction
+                trying to become the most successful power in the region.
+            </p>
+
+            <p>
+                During the game, players expand into new territories, gather
+                resources, build structures, deploy mechs, improve actions, and
+                work toward achievements represented by stars. Fighting other
+                players is possible, but building an efficient economy and
+                controlling useful territory can be just as important.
+            </p>
+
+            <p>
+                The goal is not simply to place the most stars. The game ends
+                when a player places a sixth star, but the winner is determined
+                by the amount of money each player has after final scoring.
+            </p>
+
+            <code>Build → Expand → Improve → Score</code>
+
+        </section>
+
+
+        <!-- =====================================
+             WHAT YOU NEED
+             ===================================== -->
+
+        <section class="main-section" id="What_You_Need">
+
+            <header>What You Need</header>
+            <figure class="game-image">
+                <img src="images/Scythe-Box-open.jpg" alt="Open Scythe game box and components">
+                <figcaption>Game box and components</figcaption>
+            </figure>
+
+
+            <p>
+                Scythe includes a large number of pieces, but most of them are
+                organized around the central game board and each player's
+                faction and player mats.
+            </p>
+
+            <p>
+                For a normal multiplayer game, the main pieces you will use
+                include:
+            </p>
+
+            <ul>
+                <li>The main game board</li>
+                <li>One faction mat for each player</li>
+                <li>One player mat for each player</li>
+                <li>Characters, workers, mechs, and structures</li>
+                <li>Wood, metal, oil, and food resource tokens</li>
+                <li>Coins, popularity, power, and star tokens</li>
+                <li>Combat, objective, encounter, and Factory cards</li>
+                <li>Technology cubes and recruit tokens</li>
+            </ul>
+
+            <code>Faction Mat + Player Mat = Your Faction</code>
+
+        </section>
+
+
+        <!-- =====================================
+             SETUP
+             ===================================== -->
+
+        <section class="main-section" id="Setup">
+
+            <header>Setup</header>
+
+            <p>
+                Place the game board where everyone can reach it and prepare
+                the shared cards, resources, coins, and other tokens near the
+                board.
+            </p>
+
+            <p>
+                Each player receives a faction mat and a player mat. These two
+                mats determine the player's faction abilities, starting
+                information, available actions, and the costs of improving
+                their faction during the game.
+            </p>
+
+            <ol>
+                <li>Place the main board in the center of the table.</li>
+                <li>Prepare the shared cards, coins, resources, and tokens.</li>
+                <li>Give each player a faction mat and player mat.</li>
+                <li>Place each player's character at the faction home base.</li>
+                <li>Place the starting workers in the appropriate nearby territories.</li>
+                <li>Place mechs, structures, recruits, and upgrade cubes on the player mats.</li>
+                <li>Set starting power, popularity, cards, and coins as shown by the player setup.</li>
+            </ol>
+
+            <code>Board → Faction → Player Mat → Pieces → Start</code>
+
+            <div class="tip-box">
+                <strong>First Game Tip:</strong>
+                Do not try to memorize every faction ability before starting.
+                Learn the basic player-mat actions first and check special
+                abilities when they become important.
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             HOW TO PLAY
+             ===================================== -->
+
+        <section class="main-section" id="How_to_Play">
+
+            <header>How to Play</header>
+            <figure class="game-image">
+                <img src="images/ScytheRules.jpg" alt="Scythe rules reference">
+                <figcaption>A reference for the game rules</figcaption>
+            </figure>
+
+
+            <p>
+                Scythe does not use traditional rounds where everyone completes
+                the same phase. Instead, players take turns one at a time.
+                On your turn, move your action token to a different section of
+                your player mat and use the actions shown there.
+            </p>
+
+            <p>
+                A section normally has a top-row action and a bottom-row action.
+                You may perform the top action first and then the bottom action
+                if you can pay its cost. You do not have to perform every
+                available action.
+            </p>
+
+            <code>Choose Section → Top Action → Bottom Action</code>
+
+            <h2>Top-Row Actions</h2>
+
+            <ul>
+                <li>
+                    <strong>Move:</strong>
+                    Move units across the board or gain coins.
+                </li>
+
+                <li>
+                    <strong>Bolster:</strong>
+                    Increase power or gain combat cards.
+                </li>
+
+                <li>
+                    <strong>Trade:</strong>
+                    Gain resources or increase popularity.
+                </li>
+
+                <li>
+                    <strong>Produce:</strong>
+                    Produce resources or workers from territories you control.
+                </li>
+            </ul>
+
+            <h2>Bottom-Row Actions</h2>
+
+            <ul>
+                <li>
+                    <strong>Upgrade:</strong>
+                    Make your future actions more efficient.
+                </li>
+
+                <li>
+                    <strong>Deploy:</strong>
+                    Place a mech onto the board and unlock a faction ability.
+                </li>
+
+                <li>
+                    <strong>Build:</strong>
+                    Place one of your structures on the board.
+                </li>
+
+                <li>
+                    <strong>Enlist:</strong>
+                    Gain permanent benefits from recruits.
+                </li>
+            </ul>
+
+            <p>
+                One of the most important ideas in Scythe is making these
+                actions work together. Producing resources can help pay for a
+                bottom-row action, and completing bottom-row actions can make
+                later turns cheaper or more useful.
+            </p>
+
+            <h2>Combat</h2>
+
+            <p>
+                Combat can happen when opposing combat units end up in the same
+                territory. Players secretly choose how much power to spend and
+                may add combat cards when allowed. The player with the higher
+                combat total wins, with ties going to the attacker.
+            </p>
+
+            <p>
+                Combat can earn a star and give control of useful territory,
+                but spending too much power or attacking at the wrong time can
+                weaken your position elsewhere.
+            </p>
+
+            <code>Good Turn = Action Now + Better Turn Later</code>
+
+        </section>
+
+
+        <!-- =====================================
+             SCORING AND WINNING
+             ===================================== -->
+
+        <section class="main-section" id="Scoring_and_Winning">
+
+            <header>Scoring and Winning</header>
+
+            <p>
+                Players earn stars for completing major accomplishments during
+                the game. Examples include completing upgrades, deploying
+                mechs, building structures, enlisting recruits, completing an
+                objective, reaching certain tracks, or winning combat.
+            </p>
+
+            <p>
+                The game ends immediately when a player places their sixth
+                star. Placing the sixth star triggers the end of the game, but
+                it does not automatically mean that player wins.
+            </p>
+
+            <p>
+                Final scoring converts several accomplishments into coins.
+                Stars, controlled territories, controlled resources, popularity,
+                the structure bonus, and money already earned all contribute to
+                the final result. The player with the most money wins.
+            </p>
+
+            <code>Sixth Star = End Game, Not Automatic Victory</code>
+
+            <div class="tip-box">
+                <strong>Important:</strong>
+                Popularity matters because it affects the value of several
+                scoring categories at the end of the game.
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             COMMON MISTAKES AND TIPS
+             ===================================== -->
+
+        <section
+            class="main-section"
+            id="Common_Mistakes_and_Tips">
+
+            <header>Common Mistakes and Tips</header>
+
+            <p>
+                New players often concentrate on one part of Scythe and forget
+                that the systems are connected. A strong position normally
+                comes from balancing several goals instead of focusing only on
+                one.
+            </p>
+
+            <h2>Common Mistakes</h2>
+
+            <ul>
+                <li>
+                    <strong>Assuming six stars means victory:</strong>
+                    Six stars ends the game, but money determines the winner.
+                </li>
+
+                <li>
+                    <strong>Focusing only on combat:</strong>
+                    Fighting can help, but Scythe is also about building an
+                    efficient economy and controlling territory.
+                </li>
+
+                <li>
+                    <strong>Ignoring popularity:</strong>
+                    Popularity affects final scoring and can make the same
+                    board position worth more money.
+                </li>
+
+                <li>
+                    <strong>Forgetting about resources on the board:</strong>
+                    Resources remain in territories and can be lost when
+                    control of that territory changes.
+                </li>
+
+                <li>
+                    <strong>Planning only one turn ahead:</strong>
+                    The strongest turns often prepare resources for a useful
+                    bottom-row action on a later turn.
+                </li>
+            </ul>
+
+            <h2>Three Tips for New Players</h2>
+
+            <ol>
+                <li>
+                    Look for combinations between the top and bottom actions on
+                    your player mat.
+                </li>
+
+                <li>
+                    Expand enough to gain useful resources, but do not spread
+                    out farther than you can protect.
+                </li>
+
+                <li>
+                    Watch how close every player is to six stars so the game
+                    does not end before you are ready to score.
+                </li>
+            </ol>
+
+            <code>Plan for Coins, Not Just Stars</code>
+
+        </section>
+
+
+        <!-- =====================================
+             FAQ AND EDGE CASES
+             ===================================== -->
+
+        <section class="main-section" id="FAQ_and_Edge_Cases">
+
+            <header>FAQ and Edge Cases</header>
+
+            <h2>Do I have to perform both actions on my player mat?</h2>
+
+            <p>
+                No. You may choose not to perform an action. When you do use
+                both actions, the top-row action is resolved before the
+                bottom-row action.
+            </p>
+
+
+            <h2>Can I choose the same action section every turn?</h2>
+
+            <p>
+                Normally, your action token must move to a different section of
+                the player mat on your next turn. Some faction abilities can
+                change normal rules, so always check your faction mat.
+            </p>
+
+
+            <h2>Does the first player to place six stars win?</h2>
+
+            <p>
+                No. The sixth star immediately ends the game, and then final
+                scoring is completed. The player with the most money after
+                scoring wins.
+            </p>
+
+
+            <h2>What happens if combat is tied?</h2>
+
+            <p>
+                The attacking player wins a tied combat. Because of this, the
+                defender may need to commit more power when a close result is
+                expected.
+            </p>
+
+
+            <h2>Should I attack whenever I can?</h2>
+
+            <p>
+                Not necessarily. Combat uses power and cards, and gaining a
+                territory may not be worth weakening your faction. Sometimes
+                the threat of combat is more useful than actually fighting.
+            </p>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>
