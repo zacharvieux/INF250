@@ -1,17 +1,18 @@
 # Gilded Fates pictures
 
-These are the photos I've uploaded for Project 5. I had to change a few image paths in the HTML because the names I uploaded weren't the same as the ones I started with.
+I uploaded the pictures for my Gilded Fates project here. While moving everything to GitHub, I had to change some HTML image paths because I had named the files differently.
 
-Currently used on the site:
+The pages currently use these pictures:
 
-- `gilded-fates-logo.jpg` — logo at the top of each page
-- `store-front.jpg` — home page, visit page, and video preview
-- `trading-cards.jpg` — trading cards section
-- `board-games.jpg` — board games section
-- `pokemon-open-play.jpg` — card games and events section
-- `community-play.jpg` — community section
-- `friday-night-fates.jpg` — About page
+- `gilded-fates-logo.jpg` — logo at the top
+- `store-front.jpg` — home page and location page
+- `trading-cards.jpg` — trading cards
+- `board-games.jpg` — board games
+- `pokemon-open-play.jpg` — Pokémon open play
+- `friday-night-fates.jpg` — Friday game night and About page
+- `lorcana-wednesday.jpg` — Lorcana event
+- `community-play.jpg` — community gaming
 
-I also uploaded `gilded-fates-icon.jpg` and `lorcana-wednesday.jpg`. Those are extra pictures I'm not using on the pages at the moment.
+I also uploaded `gilded-fates-icon.jpg`, but I haven't used that one on the pages.
 
-If a picture is missing, I'll check its path in the HTML and the exact spelling in GitHub. I still need to fill in the sources and permissions in [CREDITS.md](../CREDITS.md).
+If something isn't showing, I need to check the exact filename, spelling, and whether I linked to the right folder. I also have some photo credits and permissions to finish in [CREDITS.md](../CREDITS.md).
